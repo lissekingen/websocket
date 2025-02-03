@@ -14,5 +14,7 @@ class Program{
     var bres = await urisocket.ReceiveAsync (new ArraySegment<byte>(res),CancellationToken.None);
     string YEAH = Encoding.UTF8.GetString(res,0,bres.Count);
     Console.WriteLine(YEAH);
+    
+
   }
 }
